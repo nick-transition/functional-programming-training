@@ -1,5 +1,7 @@
 # 99 Haskell Problems in Javascript
 
-https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems
+This a playground for learning functional programming and solving the
+[99 Haskell problems](https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems
+) in ES6.
 
-## First I set-up testing using (mocha)[https://mochajs.org/#getting-started]
+I've got 99 problems but JS ain't one
