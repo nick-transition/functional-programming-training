@@ -62,6 +62,20 @@ module.exports = {
         return otpt
       }
     },["",""])
+  },
+  slice: function(arr,lb,ub){
+    return arr.reduce(function(otpt,elem,id){
+      if(id+1>=lb && id+1 <= ub){otpt.push(elem);return otpt;}
+      else {return otpt}
+    },[]).join("")
+  },
+  rotate: function(arr,num){
+    return "".concat(arr.slice(num%arr.length).join(""),arr.slice(0,num%arr.length).join(""))
+  },
+  removeAt:function(arr,num){
+    return [...arr].reduce(function(otpt,elem,id){
+      if(id+1==num){otpt[0]=elem;return otpt}
+      else {otpt[1]=otpt[1].concat(elem);return otpt}
+    },["",""]);
   }
-
 }
