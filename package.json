@@ -1,0 +1,30 @@
+{
+  "name": "ninety-nine-problems",
+  "version": "1.0.0",
+  "description": "Haskell's 99 problems in Javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "mocha": "^3.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "mocha": "^3.1.2"
+  },
+  "scripts": {
+    "compile": "babel --presets es2015,stage-0 -d lib/ src/",
+    "test": "npm run compile && mocha --compilers js:babel-core/register lib/**/*.spec.js"
+  },
+  "keywords": [
+    "functional",
+    "programming"
+  ],
+  "author": "Nick Stoddart <nstoddar@gmail.com>",
+  "license": "ISC"
+}
